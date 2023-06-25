@@ -114,6 +114,6 @@ jobs:
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v3
         with:
-           name: test
+           name: test-artefact
            path: lla
            retention-days: 5
