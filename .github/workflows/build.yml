@@ -111,3 +111,9 @@ jobs:
           cd build
           ctest -V -C Release
         working-directory: lla
+      - name: 'Upload Artifact'
+        uses: actions/upload-artifact@v3
+        with:
+           name: test
+           path: lla
+           retention-days: 5
